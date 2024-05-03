@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Item from "./Item";
+import Filter from "./Filter";
 
 function ShoppingList({ items }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -23,6 +24,7 @@ function ShoppingList({ items }) {
           <option value="Dairy">Dairy</option>
           <option value="Dessert">Dessert</option>
         </select>
+       
       </div>
       <ul className="Items">
         {itemsToDisplay.map((item) => (
